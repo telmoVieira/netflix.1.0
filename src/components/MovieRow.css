@@ -31,3 +31,23 @@
     transform: scale(1);
 }
 
+.movieRow--left,
+.movieRow--right {
+    position: absolute;
+    width: 40px;
+    height: 290px;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.movieRow--left{
+    left: 0;
+}
+
+.movieRow--right{
+    right: 0;
+}

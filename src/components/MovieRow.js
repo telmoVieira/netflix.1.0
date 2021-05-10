@@ -12,7 +12,7 @@ export default ({title, items}) => {
                 <NavigateBeforeIcon style={{fontSize: 50}} />
             </div>
             <div className = "movieRow--right">
-                <NavigateBeforeIcon style={{fontSize: 50}} />
+                <NavigateNextIcon style={{fontSize: 50}} />
             </div>
             <div className="movieRow--listarea">
                 <div className = "movieRow--list" >
