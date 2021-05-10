@@ -1,7 +1,7 @@
 import React from 'react';
 import './FeatureMovie.css';
 
-export default ({item}) => {
+const Feature = ({item}) => {
   console.log(item);
 
   const route = "https://www.youtube.com/results?search_query=";
@@ -41,3 +41,5 @@ export default ({item}) => {
         </section>
     );
 }
+
+export default Feature;

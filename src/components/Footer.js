@@ -3,7 +3,7 @@ import './Footer.css';
 import insta from './assets/img/insta.png';
 import face from './assets/img/face.png';
 
-export default () => {
+ const Footer = () => {
     return(
         <footer>
           <div className = "footer--div">
@@ -20,4 +20,7 @@ export default () => {
           </div>
         </footer>
     );
+
 }
+
+export default Footer;
