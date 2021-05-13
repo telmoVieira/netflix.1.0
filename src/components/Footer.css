@@ -5,11 +5,15 @@ footer{
 }
 
 .footer--div{
-    height: 105px;
+    height: 125px;
     background-color: #000;
 }
 
 .footer--logo img{
     width: 55px;
     height: 55px;
+}
+
+.footer--h1{
+  padding-top: 8px;
 }

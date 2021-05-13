@@ -5,8 +5,8 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 
-const MovieRow = ({ title, items }) => {
-    const[scrollX, setScrollX] = useState(-400);
+export default ({ title, items }) => {
+    const[scrollX, setScrollX] = useState(0);
    
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);
@@ -18,7 +18,7 @@ const MovieRow = ({ title, items }) => {
 
     const handleRighttArrow = () => {
         let x = scrollX - Math.round(window.innerWidth / 2);
-        let listW =  items.results.length * 200;
+        let listW =  items.results.length * 150;
         if((window.innerWidth - listW) > x ) {
             x = (window.innerWidth - listW) - 60;
         }
@@ -50,5 +50,3 @@ const MovieRow = ({ title, items }) => {
         </div>
     );
 }
-
-export default MovieRow;
