@@ -14,6 +14,8 @@ footer{
     height: 55px;
 }
 
-.footer--h1{
+.footer--h1,
+.footer--h2{
   padding-top: 8px;
+  font-size: 15px;
 }

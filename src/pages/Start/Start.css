@@ -1,0 +1,11 @@
+.start--first{
+    background-image: url('https://www.pcguia.pt/wp-content/uploads/2020/03/netflix.gif');
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
