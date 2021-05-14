@@ -1,14 +1,11 @@
 import './FeatureMovie.css';
 
 export default ({item}) => {
-  console.log(item);
 
   const route = "https://www.youtube.com/results?search_query=";
   const name = item.original_name;
   const final = "+trailler";
   const link = route + name + final;
-
-  console.log(link);
 
   let firstDate = new Date(item.first_air_date);
   let genres = [];
