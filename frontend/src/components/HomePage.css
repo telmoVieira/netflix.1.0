@@ -1,3 +1,6 @@
 .feature{
     height: 100vh;
 }
+.page--home{
+    background-color: red;
+}
