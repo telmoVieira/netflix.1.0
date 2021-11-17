@@ -46,7 +46,6 @@ export default () => {
     <>
     <div className="page">
 
-
       <Header black={blackHeader} />
 
       {featureData && <FeatureMovie item={featureData} />}

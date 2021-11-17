@@ -5,9 +5,8 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 
-export default ({ title, items }) => {
+export default ({ title, items, item }) => {
     const[scrollX, setScrollX] = useState(0);
-   
     const handleLeftArrow = () => {
         let x = scrollX + Math.round(window.innerWidth / 2);
         if(x = 0){
@@ -43,6 +42,14 @@ export default ({ title, items }) => {
                     {items.results.length > 0 && items.results.map((item, key) => (
                         <div key={key} className="movieRow--item">
                             <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                            <div className="img-top">
+                                <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                                <div className="hoverMovie">
+                                <button className="botao1">Descrição</button>
+                                <button className="botao1">Ver</button>
+                                </div>
+                            </div>
+                            
                         </div>
                     ))}
                 </div>

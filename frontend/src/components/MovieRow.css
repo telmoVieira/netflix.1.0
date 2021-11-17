@@ -15,16 +15,13 @@
     display: inline-block;
     width: 200px;
     cursor: pointer;
+    position: relative;
 }
 
 .movieRow--item img{
     width: 100%;
     transform: scale(0.9);
     transition: all ease 0.2s;
-}
-
-.movieRow--item img:hover{
-    transform: scale(1);
 }
 
 .movieRow--list{
@@ -65,4 +62,29 @@
     .movieRow--right {
         opacity: 1;
     }
+}
+
+.movieRow--item:hover .img-top {
+    display: inline;
+}
+
+.movieRow--item .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.movieRow--item .img-top img{
+    opacity: 0.2;
+}
+
+.hoverMovie{
+    margin-top: -200px;
+    color: black;
+    font-size: 15px;
 }

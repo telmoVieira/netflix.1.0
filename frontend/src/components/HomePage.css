@@ -4,6 +4,7 @@
 
 .header--logo--home img{
     height: 300px;
+    margin-top: -150px;
 }
 
 .container {
@@ -15,7 +16,7 @@
     align-items: center;
     }
 .container1 {
-    margin-top: -200px;
+    margin-top: -380px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,4 +34,11 @@
   margin: 4px 2px;
   cursor: pointer;
   font-size: 30px;
+}
+
+
+.usersImg{
+    width: 150px;
+    height: 160px;
+    margin-left: 20px;
 }
